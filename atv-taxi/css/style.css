@@ -1,0 +1,40 @@
+html {
+  font-size: clamp(1rem, calc(0.67rem + 1vw), 1.625rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 5vw 0 0 0;
+}
+
+header nav ul li{
+    margin: 20px 0 0 0;
+}
+
+header nav ul li.font-yellow{
+  color: #fbbc05;
+}
+
+header nav ul li.button-yellow{
+  background-color: #fbbc05;
+  color: white;
+  padding: 8px 16px;
+  border: 5px;
+  display: inline-block;
+}
+
+@media only sceen and (min-width: 600px){
+  header{
+    padding: 2px 5px;
+  }
+  header nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}

@@ -1,40 +1,246 @@
 html {
-  font-size: clamp(1rem, calc(0.67rem + 1vw), 1.625rem);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: clamp(1rem, calc(0.67rem + 1vw), 4rem);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
-header{
-    text-align: center;
-    padding: 5vw 0 0 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #252b42;
+  font-weight: 600;
 }
 
-header nav ul li{
-    margin: 20px 0 0 0;
+p {
+  color: #6f6f6f;
 }
 
-header nav ul li.font-yellow{
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 5.5vw;
+}
+
+h3 {
+  font-size: 5vw;
+}
+
+h4 {
+  font-size: 4.5vw;
+}
+
+h5 {
+  font-size: 4vw;
+}
+
+h6 {
+  font-size: 3.5vw;
+}
+
+p {
+  font-size: 3vw;
+}
+
+header a {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+header {
+  text-align: center;
+  padding: 5vw;
+}
+
+header img {
+  width: 15vw;
+}
+
+header nav ul li {
+  margin: 3vw;
+}
+
+header nav ul li a.font-yellow {
   color: #fbbc05;
 }
 
-header nav ul li.button-yellow{
+header nav ul li a.button-yellow {
   background-color: #fbbc05;
   color: white;
-  padding: 8px 16px;
+  padding: 1.5vw 3vw;
   border: 5px;
   display: inline-block;
+  border-radius: 2vw;
 }
 
-@media only sceen and (min-width: 600px){
-  header{
-    padding: 2px 5px;
+section.banner {
+  background-image: url(../images/background-banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 3vw 5vw 3vw 5vw;
+  margin: 5vw 0;
+}
+
+section.banner p {
+  margin: 3vw 0;
+}
+
+section.banner p.buttons {
+  color: rgb(104, 104, 104);
+  gap: 2vw;
+  display: flex;
+}
+
+section.banner p.buttons a {
+  background-color: #252b42;
+  display: inline-block;
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  color: #ffffff;
+  align-items: center;
+  border-radius: 2vw;
+}
+
+section.banner p.buttons img {
+  height: 4vw;
+}
+
+section.banner div.image img {
+  display: none;
+}
+
+section.ready-to-ride {
+  text-align: center;
+  padding: 3vw 5vw 3vw 5vw;
+}
+
+section.ready-to-ride h2 {
+  padding: 2vw;
+}
+
+section.ready-to-ride div.imagem img {
+  display: none;
+  padding: 3vw;
+}
+
+section.ready-to-ride div.lista ul li {
+  padding: 3vw;
+}
+
+section.ready-to-ride div.lista ul li img {
+  width: 12vw;
+}
+
+section.ready-to-ride div.lista ul li h5 {
+  padding: 1vw 0;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 4.5vw;
   }
-  header nav{
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 3.5vw;
+  }
+
+  h4 {
+    font-size: 3vw;
+  }
+
+  h5 {
+    font-size: 2.5vw;
+  }
+
+  h6 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  header {
+    padding: 2vw;
+    align-content: center;
+  }
+
+  header img {
+    width: 10vw;
+  }
+
+  header a {
+    font-size: 1.5vw;
+  }
+
+  header nav {
     display: flex;
     justify-content: space-between;
   }
-  header nav ul{
+  header nav ul {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.5vw;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  section.banner {
+    display: flex;
+    background-size: 100% auto;
+    align-items: center;
+    padding: 3vw 10vw 0 10vw;
+  }
+
+  section.banner p.buttons img {
+    height: 3vw;
+  }
+
+  section.banner div.image img {
+    display: block;
+    width: 50vw;
+  }
+
+  section.ready-to-ride div.two {
+    display: flex;
+  }
+
+  section.ready-to-ride div.imagem img {
+    display: block;
+    width: 50vw;
+  }
+
+  section.ready-to-ride div.lista {
+    text-align: left;
+  }
+
+  section.ready-to-ride div.lista ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+  }
+
+  section.ready-to-ride div.lista ul li {
+    width: 40%;
+  }
+
+  section.ready-to-ride div.lista ul li img {
+    width: 6vw;
+  }
+
+  section.ready-to-ride > p {
+    padding: 0 20%;
   }
 }

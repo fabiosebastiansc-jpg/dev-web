@@ -1,0 +1,71 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem); 
+}
+
+header{
+    text-align: right;
+    display: flex;
+    color: black;
+}
+div{
+    text-align: right;
+}
+main{
+    align-items: center;
+    text-align: center;
+    background-color: #FEF8F5	;
+}
+main nav{
+    width: 800px; 
+    size: 80px;
+}
+h4{
+    text-align: center;
+}
+h2{
+font-size: 58px;
+color: #ED672B;
+}
+
+.motivo ul{
+   
+  display: grid;
+  text-align: center;
+}
+.aspas{
+    text-align: center;
+    background-color: #FFFFFF	;
+}
+.fute{
+    background-color: #ED672B;
+    color: #FEF8F5;
+}
+.fute a{
+    color: #ED672B;
+    background-color: #FEF8F5;
+    border-radius: 15px;
+}
+footer{
+    background-color: #05073C;
+    color:white ;
+}
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+
+}
